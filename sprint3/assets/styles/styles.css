@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar img{
+    width: 10rem;
+    padding-left: .5rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+header {
+    background: rgb(21,1,101);
+    background: linear-gradient(90deg, rgba(21,1,101,1) 0%, rgba(58,1,107,1) 50%, rgba(74,0,98,1) 100%);
+    height: 25vh;
+}
+
+.nav a{
+    color: red;
+    font-size: 1.5rem; /* agregarle borde a las letras de los A*/
+}
+
+.carousel-item {
+    height: 15vh;
+}
+
+#box-cardsIndex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#box-cardsUpcoming {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#box-cardsPast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main {
+    background: rgb(146,122,245);
+    background: linear-gradient(90deg, rgba(146,122,245,1) 0%, rgba(190,124,246,1) 50%, rgba(215,115,247,1) 100%);
+    min-height: 70vh;
+}
+
+footer {
+    background: rgb(94,58,238);
+    background: linear-gradient(90deg, rgba(94,58,238,1) 0%, rgba(158,61,241,1) 50%, rgba(201,62,246,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.formcontact {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    width: 5rem;
+}
+
+.card img {
+    width: 100%;
+    height: 10rem;
+}
+
+.checkSearch {
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkSearch label {
+    margin-left: .5rem;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.search div {
+    margin: 1rem 0;
+}
+
+.d-flex{
+    flex-direction: row;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.cajaRedes img{
+    width: 2rem;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    text-align: center;
+    border: .1rem solid rgb(174, 49, 143);
+    font-size: 1.1rem;
+    color: white;
+}
+
+th {
+    background-color: rgb(43, 43, 43);
+}
+
+.cajatabla {
+    display: flex;
+    justify-content: center;
+}
+
+.stats-table {
+    width: 75%;
+    display: flex;
+    background-color: black;
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    align-items: center;
+}
+
+.details img {
+    width: 30rem;
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+    header {
+        height: 20vh;
+    }
+
+    .navbar img{
+        width: 10rem;
+        padding-left: .5rem;
+    }
+
+    .nav a{
+        color: red;
+        font-size: 1rem;
+    }
+
+    .carousel-item {
+        display: none;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-inner {
+        display: none;
+    }
+    .carousel {
+        display: none;
+    }
+
+    .checkSearch {
+        flex-direction: column;
+    }
+
+    form {
+        min-width: 70%;
+    }
+
+    .stats-table {
+        min-width: 90%;
+    }
+
+    .details {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .details img {
+        width: 80vw;
+        margin: 1rem 1rem;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    header {
+        height: 29vh;
+    }
+
+    form {
+        min-width: 60%;
+        max-width: 80%;
+    }
+
+    .details {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .details img {
+        width: 25rem;
+        padding-bottom: 1rem;
+    }
+
+}
